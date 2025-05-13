@@ -1,0 +1,122 @@
+body{
+ font-family : sans-serif, Montserrat;
+ padding : 0;
+ margin : 0;
+}
+
+.home-description{
+ background-image : url('../images/technos.png');
+ background-size : cover;
+}
+
+.navbar-brand{
+ font-weight : bold;
+ font-size : 1.5rem;
+}
+.navbar-brand::before{
+ content : "<";
+ color : #ff0058;
+}
+
+.navbar-brand::after{
+ content : "/>";
+ color : #ff0058;
+}
+
+.offcanvas-body .navbar-nav a::before{
+ content : "/";
+}
+
+
+.btn-project{
+ background-color : #ff0058;
+ border : none;
+ color : #ffffff;
+}
+
+.btn-project:hover{
+ background-color : #ff0079;
+}
+
+.formation-content{
+ height : auto;
+ width : auto;
+ margin : 4px 0;
+}
+
+.about-content{
+ min-height : 450px;
+ background-image : url('../images/cover-about.png');
+ background-size : fill;
+}
+
+.photo-about{
+ height :  400px;
+ width : auto;
+ margin : 0 auto;
+}
+
+.about-description{
+ backdrop-filter: blur(15px);
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #939597;
+  top: 0;
+  bottom: 0;
+  margin : 3px;
+}
+
+/* Container around content */
+.timeline {
+  position: relative;
+  background-color: inherit;
+  width: auto;
+}
+
+/* The circles on the timeline */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left : 5px;
+  background-color: #ffffff;
+  border: 4px solid #ff0058;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the right */
+.right {
+  padding: 0px 0px 20px 40px;
+}
+
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -12px;
+}
+
