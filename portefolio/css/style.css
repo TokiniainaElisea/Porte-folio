@@ -4,6 +4,7 @@ body{
  margin : 0;
 }
 
+
 .home-description{
  background-image : url('../images/technos.png');
  background-size : cover;
@@ -27,6 +28,34 @@ body{
  content : "/";
 }
 
+.nav-underlines .nav-link {
+  position: relative;
+  transition: color 1s ease;
+}
+
+.nav-underlines .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #ff0058;
+  transition: width 1s ease;
+}
+
+.nav-underlines .nav-link:hover::after {
+  width: 100%;
+}
+
+
+.nav-underlines .nav-link.active{
+ color : inherit;
+}
+
+.nav-underlines .nav-link.active::after{
+ width : 100%;
+}
 
 .btn-project{
  background-color : #ff0058;
