@@ -15,10 +15,11 @@
 //dark mode
 
 let state = false;
+document.querySelector('#container_global').setAttribute("data-bs-theme","dark");
 
 const change_mode = () =>{
  state = !state;
- if(state){
+ if(!state){
   document.querySelector('#container_global').setAttribute("data-bs-theme","dark");
   document.querySelector('#button_dark_mode i').className = "bi bi-sun-fill";
  }
