@@ -149,7 +149,33 @@ body{
   left: -12px;
 }
 
+.img-skills{
+ height: 75px;
+ width : 75px;
+}
+
 .image-techno{
  height: 50px;
  width : auto;
 }
+
+
+
+meter::-webkit-meter-bar {
+   background : #eee;/* couleur de fond du bar */
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #ff0052; /* couleur quand la valeur est dans la plage "optimum" */
+}
+
+meter::-webkit-meter-bar{
+ border-radius : 5px;
+}
+
+meter{
+ border-color: inherit;
+ 
+}
+
+
