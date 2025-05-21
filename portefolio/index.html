@@ -50,16 +50,20 @@
     	</button>
   </div>
 </nav>
-<div class="bg-dark-subtle container-fluid" data-bs-spy="scroll" data-bs-target="#my-navbar"> 
-    <div id="home" class="d-flex vh-100 align-items-center row">	
-	<div data-aos="fade-up" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-4 mx-auto text-center home-description ">
-		<img class="img img-fluid rounded-circle avatar shadow shadow-lg" src="images/photo-profile.png" alt="image Tokiniaina">
+<div class="bg-dark-subtle container-fluid shadow shadow-lg" data-bs-spy="scroll" data-bs-target="#my-navbar"> 
+    <div id="home" class="d-flex align-items-center vh-100 row mb-3">		
+	<div data-aos="fade-up" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-4">
+		<img class="img img-fluid" src="images/photo-profile.png" alt="image Tokiniaina">
 	</div>
 	
-	<div data-aos="fade-down" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-4 mx-auto">
-		<h1 class="h1"> At your service as </h1>
-		<h4 class="h4"> Desktop application developer </h4>
-		<h4 class="h4"> Fullstack web developer </h4>
+	<div data-aos="fade-down" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-4 mx-auto">			
+		<h1 class="h1" >  Hello, I'm Tokiniaina. </h1>
+		<h1 class="h1"> I'm at your service as: </h1>			
+		<ul>
+			<li> <h4 class="h4"> Desktop application developer </h4> </li>
+			<li> <h4 class="h4"> Fullstack web developer </h4> </li>
+			<li> <h4 class="h4"> Database administrator </h4> </li>
+		</ul>
 		<div class="d-flex button-group">
 			<a href="#projects" class="btn me-3 btn-project"> See projects </a>
 			<a href="" class="btn btn-primary"> Download my resume </a>
@@ -67,14 +71,12 @@
        </div>
    </div>
 <div id="about"> 
-  <div class="row bg-dark about-content d-flex align-items-center">
-  <h1 class="h1 my-3 text-center text-light"> About me </h1>
-  <hr>
-  <div data-aos="fade-down" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-6 p-2 text-center ">	
-	<img class="img img-fluid photo-about shadow shadow-lg" src="images/photo-about.png">
+  <div class="row d-flex align-items-center mb-3 about-content">
+  <h1 class="h1 my-3 text-center title_class"> About me </h1>
+  <div class="col-md-6 p-2 text-center">	
+	<img data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-duration="1000" class="img mx-auto img-fluid photo-about" src="images/photo-profile1.png">
   </div>
-  <div data-aos="fade-up" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-6 p-2 mx-auto about-description text-light"> 
-      <h1 class="h1" >  Hello, I'm Tokiniaina. </h1>
+  <div data-aos="fade-up" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-4 p-2 mx-auto"> 
       <h4> Passionate about IT and new technology. </h4>
      <p> 
 	I continued my studies while working in the customer relations sector. 
@@ -83,9 +85,8 @@
      </p>
   </div>
 </div>
-  <div class="row">
-  <h1 class="h1 my-3 text-center"> Formation </h1>
-  <hr class="p-2">
+  <div class="row mb-3">
+   <h1 class="h1 my-3 title_class text-center"> Formation </h1>
   <div class="col d-flex justify-content-center">
     <div class="main-timeline">
       <div class="timeline right">
@@ -127,8 +128,7 @@
      </div> 
    </div>
    <div class="container" id="skills">
-     <h1 class="h1" align="center"> Skills </h1>
-     <hr>
+     <h1 class="h1 title_class my-3" align="center "> Skills </h1>
        <div class="row p-1 m-3 d-flex justify-content-around">
 	  <h2 class="h2"> What i do ?  </h2>
           <div data-aos="zoom-in" data-aos-duration="1000" class="col-md-3 card shadow-lg mb-3 me-1">
@@ -160,7 +160,6 @@
                 </div>
  	  </div>
        </div>
-      <hr>
        <div class="row p-1 m-3 d-flex justify-content-around">
 	<h2> Tools i use </h2>
           <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-4 rounded shadow shadow-lg bg-body-tertiary mb-3 me-1 p-3">
@@ -196,7 +195,7 @@
 		</div>
 
          </div>
-         <div data-aos="zoom-in-down" data-aos-duration="1000" class="col-md-4 mb-3 shadow shadow-lg bg-body-tertiary rounded p-3">
+         <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-4 mb-3 shadow shadow-lg bg-body-tertiary rounded p-3">
            <h4 class="h4 text-center"> Back-end technologies </h4>
 		<div class="d-flex justify-content-around mb-3">
            		<img class="image-techno" src="images/technos/symfony.png" alt="icon html">
@@ -222,9 +221,8 @@
 		</div>
          </div>
        </div>
-   <div class="row" id="projects">
-	<h1 class="h1" align="center"> Projects </h1>
-	<hr>
+   <div class="row mb-3" id="projects">
+	<h1 class="h1 title_class my-3" align="center"> Projects </h1>
 	<div id="project-carousel" class="carousel slide d-flex justify-content-center">
 		<div class="carousel-indicators" >
 			<button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

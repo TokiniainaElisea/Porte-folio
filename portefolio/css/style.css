@@ -5,11 +5,6 @@ body{
 }
 
 
-.home-description{
- background-image : url('../images/technos.png');
- background-size : cover;
-}
-
 .navbar-brand{
  font-weight : bold;
  font-size : 1.5rem;
@@ -67,27 +62,17 @@ body{
  background-color : #ff0079;
 }
 
+.about-content{
+ min-height : 500px;
+}
+
 .formation-content{
  height : auto;
  width : auto;
  margin : 4px 0;
 }
 
-.about-content{
- min-height : 450px;
- background-image : url('../images/cover-about.png');
- background-size : fill;
-}
 
-.photo-about{
- height :  400px;
- width : auto;
- margin : 0 auto;
-}
-
-.about-description{
- backdrop-filter: blur(15px);
-}
 
 /* The actual timeline (the vertical ruler) */
 .main-timeline {
@@ -178,4 +163,23 @@ meter{
  
 }
 
+.title_class {
+  position: relative;
+  padding : 3px;
+}
+
+.title_class::after {
+  content: '';
+  position: absolute;
+  left :0;
+  bottom: 0;
+  width : 0%;
+  height: 3px;
+  background-color: #ff0058;
+  transition: width 1.5s ease; /* <- ici, on anime la largeur */
+}
+
+.title_class.scroll-animated::after {
+  width : 100%;
+}
 

@@ -29,3 +29,19 @@ const change_mode = () =>{
  }
 }
 
+// underline h1
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('scroll-animated');
+    }
+  });
+});
+
+// Cible tous les h1 (tu peux cibler d'autres éléments aussi)
+document.querySelectorAll('h1').forEach(h1 => {
+  observer.observe(h1);
+});
+
+
