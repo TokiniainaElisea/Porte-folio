@@ -1,0 +1,169 @@
+body{
+ font-family : sans-serif, Montserrat;
+ padding : 0;
+ margin : 0;
+}
+
+.navbar-brand{
+ font-weight : bold;
+ font-size : 1.5rem;
+}
+.navbar-brand::before{
+ content : "<";
+ color : #ff0058;
+}
+
+.navbar-brand::after{
+ content : "/>";
+ color : #ff0058;
+}
+
+.offcanvas-body .navbar-nav a::before{
+ content : "/";
+}
+
+.nav-underlines .nav-link {
+  position: relative;
+  transition: color 1s ease;
+}
+
+.nav-underlines .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #ff0058;
+  transition: width 1s ease;
+}
+
+.nav-underlines .nav-link:hover::after {
+  width: 100%;
+}
+
+
+.nav-underlines .nav-link.active{
+ color : inherit;
+}
+
+.nav-underlines .nav-link.active::after{
+ width : 100%;
+}
+
+.btn-project{
+ background-color : #ff0058;
+ border : none;
+ color : #ffffff;
+}
+
+.btn-project:hover{
+ background-color : #ff0079;
+}
+
+.about-content{
+ min-height : 500px;
+}
+
+.formation-content{
+ height : auto;
+ width : auto;
+ margin : 4px 0;
+}
+
+
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: rgb(13, 110, 253);
+  top: 0;
+  bottom: 0;
+  margin : 3px;
+}
+
+/* Container around content */
+.timeline {
+  position: relative;
+  background-color: inherit;
+  width: auto;
+}
+
+/* The circles on the timeline */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left : 5px;
+  background-color: #eee;
+  border : 4px solid rgb(13, 110, 253);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the right */
+.right {
+  padding: 0px 0px 20px 40px;
+}
+
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -12px;
+}
+
+.img-skills{
+ height: 75px;
+ width : 75px;
+}
+
+.image-techno{
+ height: 50px;
+ width : auto;
+}
+
+
+.title_class {
+  position: relative;
+  padding : 3px;
+}
+
+.title_class::after {
+  content: '';
+  position: absolute;
+  left :0;
+  bottom: 0;
+  width : 0%;
+  height: 3px;
+  background-color: rgb(13, 110, 253);
+  transition: width 1.5s ease; /* <- ici, on anime la largeur */
+}
+
+.title_class.scroll-animated::after {
+  width : 100%;
+}
+
+.icon_contact{
+ height : 40px;
+}

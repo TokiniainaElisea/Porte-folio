@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tokiniaina</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="src/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="src/css/style.css" type="text/css">
 </head>
 <body>
 <style>
@@ -16,11 +16,11 @@
   <div class="container">
     	<a class="navbar-brand" href="#"> Tokiniaina </a>
 	<div class="d-flex">
-       	<div class="offcanvas offcanvas-end" data-bs-scroll="false" tabindex="-1" id="navigation">
-	<div class="offcanvas-header">
-	   <button  type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  	</div>
-	<div class="offcanvas-body"> 
+       		<div class="offcanvas offcanvas-end" data-bs-scroll="false" tabindex="-1" id="navigation">
+			<div class="offcanvas-header">
+	  			 <button  type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  			</div>
+		<div class="offcanvas-body"> 
 		<ul class=" navbar-nav nav-underlines">
 		  <li class=" nav-item">
  			<a class="nav-link me-3" href="#home"> Home </a>
@@ -36,14 +36,14 @@
  			<a class="nav-link me-3" href="#projects"> Projects </a>
 		  </li>
 		  <li class="nav-item">
- 			<a class="nav-link me-3" href="#"> Contact </a>
+ 			<a class="nav-link me-3" href="#contact"> Contact </a>
 		  </li>
                   <li class="nav-item">
  			<button class="nav-link me-3" id="button_dark_mode" onclick="change_mode()"> <i class="bi bi-sun-fill"></i> </button>
 		  </li>
 		</ul>
-       </div>
-      </div>
+       		</div>
+             </div>
      </div>
 	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       		<span class="navbar-toggler-icon"></span>
@@ -51,13 +51,13 @@
   </div>
 </nav>
 <div class="bg-dark-subtle container-fluid shadow shadow-lg" data-bs-spy="scroll" data-bs-target="#my-navbar"> 
-    <div id="home" class="d-flex align-items-center vh-100 row mb-3">		
-	<div data-aos="fade-up" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-4">
-		<img class="img img-fluid" src="images/photo-profile.png" alt="image Tokiniaina">
+    <div id="home" class="d-flex align-items-center vh-100 row mb-3 justify-content-around">		
+	<div data-aos="fade-up" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-4 mx-auto">
+		<img class="img img-fluid" src="assests/images/photo-profile.png" alt="image Tokiniaina">
 	</div>
 	
 	<div data-aos="fade-down" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-4 mx-auto">			
-		<h1 class="h1" >  Hello, I'm Tokiniaina. </h1>
+		<h1 class="h1" >  Hello, <b style="color : #ff0058;"> I'm Tokiniaina. </b> </h1>
 		<h1 class="h1"> I'm at your service as: </h1>			
 		<ul>
 			<li> <h4 class="h4"> Desktop application developer </h4> </li>
@@ -72,9 +72,9 @@
    </div>
 <div id="about"> 
   <div class="row d-flex align-items-center mb-3 about-content">
-  <h1 class="h1 my-3 text-center title_class"> About me </h1>
+  <h1 class="h1 my-3 text-center title_class text-primary"> About me </h1>
   <div class="col-md-6 p-2 text-center">	
-	<img data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-duration="1000" class="img mx-auto img-fluid photo-about" src="images/photo-profile1.png">
+	<img data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-duration="1000" class="img mx-auto img-fluid photo-about" src="assests/images/photo-profile1.png">
   </div>
   <div data-aos="fade-up" data-aos-easing="ease-in-back"  data-aos-duration="1000" class="col-md-4 p-2 mx-auto"> 
       <h4> Passionate about IT and new technology. </h4>
@@ -86,33 +86,36 @@
   </div>
 </div>
   <div class="row mb-3">
-   <h1 class="h1 my-3 title_class text-center"> Formation </h1>
+   <h1 class="h1 my-3 title_class text-center text-primary"> Formation </h1>
   <div class="col d-flex justify-content-center">
     <div class="main-timeline">
       <div class="timeline right">
         <div data-aos="zoom-in-down" data-aos-easing="ease-in-back" data-aos-duration="1000" class="card">
           <div class="card-body p-4 shadow shadow-lg">
-            <h3>Now</h3>
+            <h3>Now :</h3>
+	    <h6> ( CNTEMAD ) </h6>
             <p class="mb-0"> <i>  Master one in software engineering and databases </i> </p>
-	    <h6> CNTEMAD </h6> 
+
           </div>
         </div> 
       </div> 
       <div class="timeline right">
         <div data-aos="zoom-in-down" data-aos-easing="ease-in-back" data-aos-duration="1000" class="card">
           <div class="card-body p-4 shadow shadow-lg">
-            <h3>2025</h3>
+            <h3>2025 :</h3>
+	    <h6> ( CNTEMAD ) </h6> 
             <p class="mb-0"> <i>  Bachelor's degree in software engineering and databases </i> </p>
-	    <h6> CNTEMAD </h6> 
+	    
           </div>
         </div>
       </div>  
       <div class="timeline right">
         <div data-aos="zoom-in-down" data-aos-easing="ease-in-back"data-aos-duration="1000"  class="card">
           <div class="card-body p-4 shadow shadow-lg">
-            <h3>2024</h3>
+            <h3>2024 :</h3>
+	    <h6> ( NetAcad ) </h6>
             <p class="mb-0"> <i>  JavaScript Essentials 1 certification </i> </p>
-	    <h6> NetAcad </h6> 
+	     
           </div>
         </div> 
       </div>
@@ -120,43 +123,43 @@
         <div data-aos="zoom-in-down" data-aos-easing="ease-in-back" data-aos-duration="1000" class="card">
           <div class="card-body p-4 shadow shadow-lg">
             <h3>Juillet 2023 - Septembre 2023 </h3>
+	    <h6> ( Baby's Cool Learning Academy ) </h6>
             <p class="mb-0"> <i> fullstack PHP development internship </i> </p>
-	    <h6> Baby's Cool Learning Academy </h6> 
           </div>
         </div> 
       </div>
      </div> 
    </div>
    <div class="container" id="skills">
-     <h1 class="h1 title_class my-3" align="center "> Skills </h1>
+     <h1 class="h1 title_class my-3 text-primary" align="center"> Skills </h1>
        <div class="row p-1 m-3 d-flex justify-content-around">
 	  <h2 class="h2"> What i do ?  </h2>
           <div data-aos="zoom-in" data-aos-duration="1000" class="col-md-3 card shadow-lg mb-3 me-1">
 		<div class="card-body">  
-			<img class="img-skills" src="images/technos/front.png">
-			<h5 class="card-title my-3 text-primary">Front-end developpement</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+			<img class="img-skills" src="assests/images/technos/front.png">
+			<h4 class="card-title my-3 text-primary">Front-end developpement</h4>
+			<p class="card-text">Building interactive, responsive user interfaces to ensure a smooth and engaging experience across all devices.</p>
                 </div>
  	  </div>
           <div data-aos="zoom-in" data-aos-duration="1000" class="col-md-3 card shadow-lg mb-3 me-1">
 		<div class="card-body"> 
-			<img class="img-skills" src="images/technos/back.png">
-			<h5 class="card-title my-3 text-primary">Back-end developpement</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+			<img class="img-skills" src="assests/images/technos/back.png">
+			<h4 class="card-title my-3 text-primary">Back-end developpement</h4>
+			<p class="card-text">Designing server-side logic, managing APIs, security, and data processing behind the scenes.</p>
                 </div>
  	  </div>
           <div data-aos="zoom-in" data-aos-duration="1000" class="col-md-3 card shadow-lg mb-3 me-1">
 		<div class="card-body"> 
-                        <img class="img-skills" src="images/technos/desktop.png">
-			<h5 class="card-title my-3 text-primary">Desktop application developpement</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <img class="img-skills" src="assests/images/technos/desktop.png">
+			<h4 class="card-title my-3 text-primary">Desktop application developpement</h4>
+			<p class="card-text">Creating installable software for desktop environments, focused on performance, stability, and user-friendly interfaces.</p>
                 </div>
  	  </div>
           <div data-aos="zoom-in" data-aos-duration="1000" class="col-md-3 card shadow-lg mb-3">
 		<div class="card-body"> 
-                        <img class="img-skills" src="images/technos/db.png">
-			<h5 class="card-title my-3 text-primary">Database administration</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <img class="img-skills" src="assests/images/technos/db.png">
+			<h4 class="card-title my-3 text-primary">Database administration</h4>
+			<p class="card-text">Structuring, securing, and optimizing databases to ensure reliability, efficiency, and scalability.</p>
                 </div>
  	  </div>
        </div>
@@ -165,31 +168,31 @@
           <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-4 rounded shadow shadow-lg bg-body-tertiary mb-3 me-1 p-3">
 		<h4 class="h4 text-center"> Programming langages </h4>
 		<div class="d-flex justify-content-around mb-3">
-           		<img class="image-techno" src="images/technos/js.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/js.png" alt="icon html">
 
-           		<img class="image-techno" src="images/technos/java.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/java.png" alt="icon html">
 
 		</div>
 		<div class="d-flex justify-content-around ">
-			<img class="image-techno" src="images/technos/php.png" alt="icon html">
+			<img class="image-techno" src="assests/images/technos/php.png" alt="icon html">
   
-           		<img class="image-techno" src="images/technos/python.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/python.png" alt="icon html">
 		</div>
 
          </div>
          <div data-aos="zoom-in-down" data-aos-duration="1000" class="col-md-4 mb-3 shadow shadow-lg bg-body-tertiary rounded p-3">
            <h4 class="h4 text-center"> Front-end technologies </h4>
 		<div class="d-flex justify-content-around mb-3">
-           		<img class="image-techno" src="images/technos/html.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/html.png" alt="icon html">
 
-           		<img class="image-techno" src="images/technos/css.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/css.png" alt="icon html">
 
-			<img class="image-techno" src="images/technos/bootstrap.png" alt="icon html">
+			<img class="image-techno" src="assests/images/technos/bootstrap.png" alt="icon html">
 		</div>
 		<div class="d-flex justify-content-around ">
-           		<img class="image-techno" src="images/technos/vuejs.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/vuejs.png" alt="icon html">
 
-           		<img class="image-techno" src="images/technos/react.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/react.png" alt="icon html">
 			
 			
 		</div>
@@ -198,31 +201,31 @@
          <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-4 mb-3 shadow shadow-lg bg-body-tertiary rounded p-3">
            <h4 class="h4 text-center"> Back-end technologies </h4>
 		<div class="d-flex justify-content-around mb-3">
-           		<img class="image-techno" src="images/technos/symfony.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/symfony.png" alt="icon html">
  	
-           		<img class="image-techno" src="images/technos/django.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/django.png" alt="icon html">
 		</div>
 		<div class="d-flex justify-content-around ">
-           		<img class="image-techno" src="images/technos/nodejs.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/nodejs.png" alt="icon html">
 			
-			<img class="image-techno" src="images/technos/express.png" alt="icon html">
+			<img class="image-techno" src="assests/images/technos/express.png" alt="icon html">
  	
 		</div>
          </div>
          <div data-aos="zoom-in-down" data-aos-duration="1000" class="col-md-4 mb-3 shadow shadow-lg bg-body-tertiary rounded p-3">
            <h4 class="h4 text-center"> Database </h4>
            	<div class="d-flex justify-content-around mb-3">
-			<img class="image-techno" src="images/technos/oracle.png" alt="icon html">
+			<img class="image-techno" src="assests/images/technos/oracle.png" alt="icon html">
 
-           		<img class="image-techno" src="images/technos/mysql.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/mysql.png" alt="icon html">
 		</div>
 		<div class="d-flex justify-content-around ">
-           		<img class="image-techno" src="images/technos/sqlite.png" alt="icon html">
+           		<img class="image-techno" src="assests/images/technos/sqlite.png" alt="icon html">
 		</div>
          </div>
        </div>
    <div class="row mb-3" id="projects">
-	<h1 class="h1 title_class my-3" align="center"> Projects </h1>
+	<h1 class="h1 title_class my-3 text-primary" align="center"> Projects </h1>
 	<div id="project-carousel" class="carousel slide d-flex justify-content-center">
 		<div class="carousel-indicators" >
 			<button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -232,7 +235,7 @@
                 <div data-aos="fade-up" class="carousel-inner" style="height: 450px; width : 450px;">
 		    <div class="carousel-item active">
 			<div class="card">
-				<img class="img img-fluid" src="images/projects/projet1_1.png" alt="projet 1">
+				<img class="img img-fluid" src="assests/images/projects/projet1_1.png" alt="projet 1">
 				<div class="card-body">
 					<h4> Porte-folio </h4>
 					<h6> Technologies : HTML, CSS, JavaScript bootstrap, PHP,  </h6>
@@ -242,7 +245,7 @@
 		    </div>
 		    <div class="carousel-item">
 			<div class="card">
-				<img src="images/projects/projet1_1.png" alt="projet 1">
+				<img class="img img-fluid" src="assests/images/projects/projet1_1.png" alt="projet 1">
 				<div class="card-body">
 					<h4> Porte-folio </h4>
 					<h6> Technologies : HTML, CSS, JavaScript bootstrap, PHP,  </h6>
@@ -261,33 +264,45 @@
   		</button>
         </div>
    </div>
-   </div>	
-</div> 
-
-<script src="js/bootstrap.min.js"> </script>
+<div class="row d-flex justify-content-around mb-3" id="contact">	
+	<h1 class="h1 title_class my-5 text-primary" align="center"> Contact </h1>
+	<div class="col-md-4 mb-5">
+	    <div data-aos="fade-up" class="d-flex mb-3">
+                <img src="assests/icons/github.png" class="icon_contact me-3"> 
+		<h4 class="mb-3"> /github.com/TokiniainaElisea/ </h4>
+	    </div>
+	    <div data-aos="fade-up" class="d-flex mb-3">
+		<img src="assests/icons/phone.png" class="icon_contact me-3"> 
+ 		<h4 class="mb-4"> 038 96 317 58 </h4>
+	    </div>
+	    <div data-aos="fade-up" class="d-flex mb-3 justify-content-around">
+		<a href=""> <img src="assests/icons/facebook.png" class="icon_contact me-3">  </a>
+ 		<a href=""> <img src="assests/icons/whatsapp.png" class="icon_contact me-3"> </a>
+		<a href=""> <img src="assests/icons/linkedin.png" class="icon_contact me-3">  </a>
+	    </div>
+		<a data-aos="fade-up" href="" class="btn btn-project shadow shadow-lg"> Download CV </a>
+	</div>
+	<div data-aos="fade-down" class="col-md-6 mb-4">
+		<form method="post" action="">
+			<input type="text" class="form-control mb-4 shadow shadow-lg" placeholder="Your name">
+			<input type="text" class=" form-control mb-4 shadow shadow-lg" placeholder="Your e-mail">
+			<textarea type="text" class="form-control mb-4 shadow shadow-lg" rows="5"></textarea>
+			<button class="btn btn-project shadow shadow-lg" type="submit"> Submit </button>
+		</form>
+	</div>
+</div>
+</div>
+</div>
+ <div class="row bg-dark shadow shadow-lg text-light text-center p-3">
+	<h6> Builded by <b style="color:#ff0058;"> Tokiniaina </b> &copy; 2025. All rights reserved. </h6>
+	<h6> </h6>
+ </div>
+</div>
+<script src="src/js/bootstrap.min.js"> </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/app.js"> </script>
-<script>
+<script src="src/js/app.js"> </script>
+<div class="container-fluid bg-primary">
 
-window.onscroll = function(){
-	scrollFunction();
-}
-
-const myNavBar = document.querySelector("#my-navbar"); //the header
-
-const sticky = myNavBar.offsetTop;
-
-function scrollFunction(){
- if(window.pageYOffset > sticky){
-	myNavBar.classList.add("fixed-top");
- }
-
- else{
-	myNavBar.classList.remove("fixed-top");
- }
-}
-
-  AOS.init();
-</script>
+</div>
 </body>
 </html>
